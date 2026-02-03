@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - วัฒนธรรมล้านนา เชียงใหม่</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Thai Sans Serif', Verdana, sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+        header {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        nav {
+            background: #3d2817;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.2rem;
+            color: #8B4513;
+            margin: 2.5rem 0 1.5rem 0;
+            border-left: 5px solid #D2691E;
+            padding-left: 1rem;
+            position: relative;
+        }
+        .content-section {
+            background: #faf7f2;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #D2691E;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #D2691E;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3.5rem;
+        }
+        .card-content {
+            padding: 1.5rem;
+        }
+        .card-content h3 {
+            color: #8B4513;
+            margin-bottom: 0.7rem;
+            font-size: 1.3rem;
+        }
+        .card-content p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .highlight {
+            background: #FFF8DC;
+            padding: 1.5rem;
+            border-left: 4px solid #D2691E;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .highlight strong {
+            color: #8B4513;
+        }
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            color: #333;
+        }
+        footer {
+            background: #3d2817;
+            color: white;
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 4rem;
+            font-size: 0.95rem;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+    </style>
+ </head>
+ <body>
+    <header>
+        <h1> วัฒนธรรมล้านนา</h1>
+        <p>มรดกอันศักดิ์สิทธิ์ของเชียงใหม่</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="culture.html">วัฒนธรรม</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="festivals.html">เทศกาล & ศิลปะ</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="intro">
+            <h2 class="section-title">ยินดีต้อนรับสู่ล้านนา</h2>
+            <p class="intro-text">
+                ล้านนา เป็นอาณาจักรโบราณที่ตั้งอยู่ในภาคเหนือของไทย โดยมีเชียงใหม่เป็นศูนย์กลางทางวัฒนธรรม วัฒนธรรมล้านนาสืบทอดมาจากอารยธรรมไทยโบราณ มอญ บรรมาส และจีน ผสมผสานเข้ากับความเป็นตัวตนเฉพาะของชาวล้านนาที่รักษาเอกลักษณ์วัฒนธรรมสืบต่อมาจนถึงปัจจุบัน
+            </p>
+            <div class="highlight">
+                <strong>ความหมายของคำว่า "ล้านนา":</strong> ชาวท้องถิ่นเชื่อว่า "ล้านนา" แปลว่า "ล้าน" = หนึ่งล้าน และ "นา" = ไร่ ซึ่งสัญลักษณ์ถึงความอุดมสมบูรณ์และความมั่งคั่งของแผ่นดินนี้
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem;">
+            <h2 class="section-title">📚 เรียนรู้เพิ่มเติม</h2>
+            <div class="grid">
+                <a href="culture.html" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <div class="img"><img src="oo1.jpg" alt="วัฒนธรรมล้านนา เชียงใหม่" style="width: 100%; height: auto; "></div>
+                        <div class="card-content">
+                            <h3>วัฒนธรรมและประเพณี</h3>
+                            <p>สำรวจศาสนา ภาษา ชุมชน และประเพณีที่สำคัญของชาวล้านนา</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="food.html" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <div class="img"><img src="oo2.jpg" alt="อาหารล้านนา" style="width: 100%; height: auto; "></div>
+                        <div class="card-content">
+                            <h3>อาหารล้านนา</h3>
+                            <p>ค้นหาความอร่อยของอาหารพื้นบ้านล้านนาที่มีรสชาติเฉพาะตัว</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="festivals.html" style="text-decoration: none; color: inherit;">
+                    <div class="card">
+                        <div class="card-img"><img src="oo4.jpg" alt="เทศกาลล้านนา" style="width: 100%; height: auto; "></div>
+                        <div class="card-content">
+                            <h3>เทศกาลและศิลปะ</h3>
+                            <p>เข้าร่วมเฉลิมฉลองงานประเพณีและชื่นชมศิลปะหัตถกรรม</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem; background: #faf7f2; padding: 2rem; border-radius: 8px;">
+            <h2 class="section-title" style="margin-top: 0;">🏛️ ประวัติศาสตร์ล้านนา</h2>
+            <p>อาณาจักรล้านนา คืออดีตราชอาณาจักรทางภาคเหนือตอนบนของไทย ก่อตั้งโดย พญามังราย เมื่อ พ.ศ. 1839 มีศูนย์กลางที่เชียงใหม่ เจริญรุ่งเรืองถึงขีดสุดในสมัยพระเจ้าติโลกราช (พ.ศ. 1985–2030) มีอารยธรรม ภาษา และตัวอักษรเป็นของตนเอง 
+                ต่อมาตกเป็นเมืองขึ้นของพม่าและถูกรวมเข้ากับสยามในสมัยรัตนโกสินทร์  </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 วัฒนธรรมล้านนา | สงวนลิขสิทธิ์</p>
+    </footer>
+ </body>
+ </html>
